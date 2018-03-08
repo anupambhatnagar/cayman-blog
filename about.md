@@ -1,13 +1,12 @@
 ---
 layout: page
-title: About
-tagline: A few more words about this theme
+title: About Me
+tagline: A bit about myself
 permalink: /about.html
 ---
 
-This is the _Cayman Blog_ Jekyll theme. You can find out more info about customizing this theme, as well as basic usage documentation, and source code at: [cayman-blog](https://github.com/lorepirri/cayman-blog)
+Hi :)
 
-You can find the source code for _Jekyll_ at [jekyll](https://github.com/jekyll/jekyll)
+It's Anupam here. I'm a Data Scientist based in Silicon Valley, California, USA. 
 
-
-[Go to the Home Page]({{ site.url }}{{ site.baseurl }})
+Prior to being a Data Scientist I was an Assistant Professor of Mathematics (tenure-track) at City University of New York (CUNY). I wrote my PhD under Lucien Szpiro at The Graduate Center (CUNY) and held postdoctoral positions at New York University and Brown University. 

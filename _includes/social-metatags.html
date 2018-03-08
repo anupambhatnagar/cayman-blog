@@ -49,11 +49,11 @@
 {%endif %}
 
 <!-- Schema.org markup for Google+ -->
-<meta itemprop="name" content="{{ page_title }}">
+<!-- <meta itemprop="name" content="{{ page_title }}">
 <meta itemprop="description" content="{{ page_description }}">
 {%if page_image %}
   <meta itemprop="image" content="{{ page_image }}">
-{%endif %}
+{%endif %} -->
 
 <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary_large_image">
@@ -77,7 +77,7 @@
 <meta property="twitter:url" content="{{ canonical_url }}">
 
 <!-- Open Graph data -->
-<meta property="og:title" content="{{ page_title }}" />
+<!-- <meta property="og:title" content="{{ page_title }}" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ canonical_url }}" />
 {%if page_image %}
@@ -90,9 +90,9 @@
 {%endif %}
 {%if page.modified_date %}
   <meta property="article:modified_time" content="{{ page.modified_date | date_to_xmlschema }}" />
-{%endif %}
+{%endif %} -->
 
-{%if site.facebook.admins %}
+<!-- {%if site.facebook.admins %}
   {% for admin in site.facebook.admins %}
     <meta property="fb:admins" content="{{ admin }}" />
   {% endfor %}
@@ -113,7 +113,7 @@
   {% for author in facebook_authors %}
     <meta property="article:author" content="https://www.facebook.com/{{ author }}">
   {% endfor %}
-{%endif %}
+{%endif %} -->
 
 
 {%if page.tags %}
