@@ -42,12 +42,12 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
 
-  
+
   <body>
 
     {% include site-header.html %}
 
-    {% if page.layout == 'home' %}
+    {% if page.layout == 'default' %}
       {% assign page-tagline = site.description | escape %}
     {% endif %}
     {% if page.layout == 'page' %}

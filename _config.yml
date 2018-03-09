@@ -5,10 +5,6 @@ show_downloads: true
 baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
 url: "https://anupambhatnagar.github.io" # change this to the base hostname & protocol for your site
 
-google_analytics:
-# cayman-blog date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-
 cayman-blog:
   date_format: "%b %-d, %Y"
 
@@ -19,7 +15,7 @@ author: "Anupam Bhatnagar"
 # social
 github:
   owner_url: anupambhatnagar
-  owner_name: anupambhatnagar
+  owner_name: Anupam
 linkedin:
   owner_name: Anupam
   owner_url: bhatnagaranupam
@@ -35,7 +31,6 @@ disqus:
 
 plugins: 
   - jekyll-paginate
-
 
 paginate: 3
 paginate_path: "page:num"
