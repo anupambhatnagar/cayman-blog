@@ -3,11 +3,11 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
+paginate: true
 ---
 
 <div>
   <h1>Latest Posts</h1>
-  <ul class="post-list">
 
   <!-- Pagination, this loops through the paginated posts -->
   {% for post in paginator.posts %}
@@ -19,20 +19,30 @@ layout: default
     </div>
   {% endfor %}
 
-  <!-- Pagination links -->
-  <div class="pagination" align="center">
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-      {% else %} <span class="previous">Previous</span>
-      {% endif %}
+  {% if paginator.total_pages > 1 %}  
+  <div class="pagination" align="center">  
+    {% if paginator.previous_page %}  
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>  
+    {% else %}
+      <span>&laquo; Prev</span>  
+    {% endif %}  
 
-      <!-- <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> -->
-
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-      {% else %} <span class="next"> Next </span>
-      {% endif %}
-  </div>
+    {% for page in (1..paginator.total_pages) %}  
+      {% if page == paginator.page %}  
+        {{ page }}
+      {% elsif page == 1 %}  
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>  
+      {% else %}  
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>  
+      {% endif %}  
+    {% endfor %}  
     
-  </ul>
+    {% if paginator.next_page %}  
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next &raquo;</a>  
+    {% else %}  
+      <span>Next &raquo;</span>  
+    {% endif %}  
+  </div>  
+  {% endif %}
+
 </div>
