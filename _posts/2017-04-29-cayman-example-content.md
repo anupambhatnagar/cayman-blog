@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Example content"
-<!-- permalink: /blog/:year/:month/:day -->
+description: 
+tags: blog
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.

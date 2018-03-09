@@ -6,7 +6,8 @@ categories: junk
 image: /thumbnail-mobile.png
 author: "Bart Simpson"
 meta: "Springfield"
-<!-- permalink: /blog/:year/:month/:day -->
+description: 
+tags: jekyll markdown
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.

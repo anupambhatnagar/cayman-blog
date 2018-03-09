@@ -1,4 +1,4 @@
-title: Math Meets ML
+title: Math meets ML
 description: on Mathematics and Machine Learning
 show_downloads: true
 
@@ -25,8 +25,8 @@ linkedin:
   owner_url: bhatnagaranupam
 
 header_pages: 
+  - quotes.md
   - about.md
-  - contact.md
 
 show_downloads: true
 
