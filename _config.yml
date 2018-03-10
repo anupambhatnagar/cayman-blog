@@ -22,6 +22,7 @@ linkedin:
 
 header_pages: 
   - quotes.md
+  - archive.html
   - about.md
 
 show_downloads: true
