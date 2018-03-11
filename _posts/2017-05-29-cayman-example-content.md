@@ -3,6 +3,8 @@ layout: post
 title: "Example content"
 description: 
 tags: blog
+jsarr: 
+ - ln/line-number.js
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
@@ -97,7 +99,9 @@ end
 
 ### Small image
 
-![](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
+Small github image.  Continue markdown text... <img style="float: right;" hspace="20" src="https://assets-cdn.github.com/images/icons/emoji/octocat.png"> 
+
+<!-- ![](https://assets-cdn.github.com/images/icons/emoji/octocat.png) -->
 
 ### Large image
 
@@ -108,7 +112,7 @@ end
 
 <dl>
 <dt>Name</dt>
-<dd>Godzilla</dd>
+<div style="text-align: left;"> <dd>Godzilla</dd> </div>
 <dt>Born</dt>
 <dd>1952</dd>
 <dt>Birthplace</dt>
